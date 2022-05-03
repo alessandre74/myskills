@@ -19,7 +19,8 @@ export function Home() {
       id: String(new Date().getTime()),
       name: newSkill
     }
-    console.log('New Skill ', data)
+
+    setNewSkill(' ')
     setMySkilss([...mySkills, data])
   }
 
@@ -52,15 +53,12 @@ export function Home() {
           placeholder="New skill"
           placeholderTextColor="#555"
           onChangeText={setNewSkill}
+          value={newSkill}
         />
 
         <Button onPress={handleAddNewSkill} title="Add" />
 
         <Text style={[styles.title, { marginVertical: 50 }]}>My Skills</Text>
-
-        {mySkills.map(skill => (
-          <Text style={styles.title}>{skill}</Text>
-        ))}
 
         <FlatList
           data={mySkills}
