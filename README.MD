@@ -66,11 +66,11 @@ yarn android ou npm run android
 ```
 
 ```
-OBS: Caso acontece algum problema de build do projeto execute os comando abaixo:
+OBS: Caso acontece algum problema no build do projeto execute os comandos abaixo:
 
 1 - watchman watch-del-all
-2 - yarn cache clean ou npm run cache
-3 - yarn start -- --reset-cache
+2 - yarn cache clean ou npm run cache clean
+3 - yarn start -- --reset-cache ou npm run -- --reset-cache
 4 - yarn ios ou npm run ios (para IOS)
 5 - yarn android ou npm run android (para Android)
 ```
