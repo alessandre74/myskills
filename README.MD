@@ -30,10 +30,7 @@ Instale as dependências
 ````
 yarn ou sudo yarn
 
-```
 ou
-
-````
 
 npm install ou sudo npm install
 
@@ -93,3 +90,4 @@ Este projeto está sob a licença MIT
 ```
 
 ```
+````
